@@ -1,0 +1,20 @@
+mutation UpdateReferenceInventory($referenceId: ID!, $newInventory: Int!) {
+  updateReferenceInventory(referenceId: $referenceId, newInventory: $newInventory) {
+    success
+    errors
+    reference {
+      id
+      name
+      qty_sold
+      unit
+      p_sold
+      p_bought
+      date
+      hour
+      valorisation
+      promotion
+      inventory
+      ordered
+    }
+  }
+}

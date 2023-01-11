@@ -1,0 +1,76 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.7.3",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fontsource/lexend": "^4.5.13",
+    "@fontsource/lexend-deca": "^4.5.12",
+    "@graphql-codegen/cli": "^2.16.3",
+    "@graphql-codegen/typescript-operations": "^2.5.12",
+    "@graphql-codegen/typescript-react-apollo": "^3.3.7",
+    "@headlessui/react": "^1.7.7",
+    "@heroicons/react": "^2.0.13",
+    "@mui/material": "^5.11.2",
+    "@reduxjs/toolkit": "^1.9.1",
+    "@tailwindcss/typography": "^0.5.8",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/axios": "^0.14.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.10",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "@types/react-icons": "^3.0.0",
+    "@types/styled-components": "^5.1.26",
+    "autoprefixer": "^10.4.13",
+    "axios": "^1.2.1",
+    "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6",
+    "postcss-cli": "^10.1.0",
+    "react": "^18.2.0",
+    "react-datetime": "^3.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-router-dom": "^6.6.1",
+    "react-scripts": "5.0.1",
+    "redux": "^4.2.0",
+    "state-pool": "^0.9.0",
+    "styled-components": "^5.3.6",
+    "typescript": "^4.9.4",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "codegen": "graphql-codegen --config graphql.config.yaml --errors-only",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.3.3",
+    "tailwindcss": "^3.2.4"
+  },
+  "proxy": "http://localhost:5000"
+}

@@ -1,0 +1,31 @@
+query GetUsers{
+            users {
+              success
+              errors
+              users {
+                email
+                password 
+                username 
+                id
+                
+
+              
+            }
+          }
+        }
+
+query GetUser{
+            user {
+              success
+              errors
+              user {
+                email
+                password 
+                username 
+                id
+                
+
+              
+            }
+          }
+        }

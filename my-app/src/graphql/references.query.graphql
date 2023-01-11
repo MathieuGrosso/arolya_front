@@ -1,0 +1,43 @@
+query ReferenceByUserId($userId: ID!) {
+  referenceByUserId(userId: $userId) {
+    success
+    errors
+    references {
+      id
+      name
+      qty_sold
+      unit
+      p_sold
+      p_bought
+      date
+      hour
+      valorisation
+      promotion
+      inventory
+      ordered
+    }
+  }
+}
+
+
+query FilterReferencesByUserId($userId: ID!,$referencesInput:ReferencesInputFilter){
+  filterReferences(userId:$userId,input:$referencesInput) {
+            success
+            errors
+            references {
+                id
+                name
+                qty_sold
+                unit
+                p_sold
+                p_bought
+                date
+                hour
+                valorisation
+                promotion
+                inventory
+                ordered
+            }
+        }
+        }
+        
